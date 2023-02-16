@@ -1,0 +1,137 @@
+::-webkit-search-cancel-button {
+  position: relative;
+  right: 30px;
+  background: url(./assets/xmark-solid.svg) no-repeat 50% 50%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 95%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+.marker {
+  background-image: url('./marker.svg');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.markerDetails {
+  padding: 5px;
+  max-height: 5.75rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.name_loc {
+  padding: 5px;
+  color: rgb(179, 179, 179);
+}
+.name_loc p::first-letter {
+  text-transform: capitalize;
+}
+.name_loc :hover {
+  color: white;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.born {
+  background-image: url('./icons/born.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.family {
+  background-image: url('./icons/family.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.love {
+  background-image: url('./icons/love.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.history {
+  background-image: url('./icons/history.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99999;
+}
+.summit {
+  background-image: url('./icons/mountain.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+.lelaku {
+  background-image: url('./icons/alone.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.maiyah {
+  background-image: url('./icons/semesta.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99999;
+}
+.mapboxgl-ctrl .mapboxgl-ctrl-group {
+  bottom: 0;
+}

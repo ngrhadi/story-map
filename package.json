@@ -1,0 +1,27 @@
+{
+  "name": "ngrhadi-port",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.7.0",
+    "@parcel/compressor-gzip": "^2.7.0",
+    "@parcel/config-default": "^2.7.0",
+    "@parcel/reporter-bundle-analyzer": "^2.7.0",
+    "parcel": "^2.7.0",
+    "postcss-plugin": "^1.0.0",
+    "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "start": "parcel -p 3009 --no-source-maps",
+    "build": "parcel build src/index.html --no-source-maps --reporter @parcel/reporter-bundle-analyzer",
+    "clear": "rm -rf ./dist"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "d3": "^7.6.1",
+    "d3-geo": "^3.0.1",
+    "postcss": "^8.4.19"
+  }
+}

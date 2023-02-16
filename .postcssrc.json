@@ -1,0 +1,8 @@
+{
+  "parser": "sugarss",
+  "map": false,
+  "plugins": {
+    "tailwindcss": {},
+    "postcss-plugin": {}
+  }
+}
